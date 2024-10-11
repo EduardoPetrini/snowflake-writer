@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Current TS File",
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "args": ["${relativeFile}"],
+      "cwd": "${workspaceFolder}",
+      "protocol": "inspector",
+      "internalConsoleOptions": "openOnSessionStart",
+      "console": "integratedTerminal"
+    }
+  ]
+}
